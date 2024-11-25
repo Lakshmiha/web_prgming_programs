@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Javascript string and math functions</title>
+</head>
+<body>
+<h1>String and Math Functions Example</h1>
+<h2>String Functions</h2>
+<p id="String 0"></p>
+<p id="String 1"></p>
+<p id="String 2"></p>
+<p id="String 3"></p>
+<p id="String 4"></p>
+<p id="String 5"></p>
+
+<h2>Math functions</h2>
+<p id="Math 0"></p>
+<p id="Math 1"></p>
+<p id="Math 2"></p>
+<p id="Math 3"></p>
+<p id="Math 4"></p>
+<p id="Math 5"></p>
+
+<script>
+let str="Hello,World!";
+let trimmedStr=str.trim();
+let replacedStr=str.replace("World","Javascript");
+let includesWord=str.includes("World");
+let lowerStr=str.toLowerCase();
+let subStr=str.substring(0,5);
+document.getElementById("String 0").innerHTML="String is:"
+document.getElementById("String 1").innerHTML="Trimmed String is:'"+trimmedStr+"'";
+document.getElementById("String 2").innerHTML="Replaced String is:'"+replacedStr+"'";
+document.getElementById("String 3").innerHTML="Contains 'world':'"+includesWord;
+document.getElementById("String 4").innerHTML="Lowercase String is:'"+lowerStr+"'";
+document.getElementById("String 5").innerHTML="Substring(0-5):'"+subStr+"'";
+
+let num=25;
+let sqrtResult=Math.sqrt(num);
+let randomNumber=Math.random();
+let roundedNum=Math.round(9.6);
+let maxNum=Math.max(1,2,3,50,100,245);
+let minNum=Math.min(1,2,3,50,100,245);
+document.getElementById("Math 0").innerHTML="Number is:"+num;
+document.getElementById("Math 1").innerHTML="Square root of 25:"+sqrtResult;
+document.getElementById("Math 2").innerHTML="Random number:"+randomNumber;
+document.getElementById("Math 3").innerHTML="Rounded Number(9.6):"+roundedNum;
+document.getElementById("Math 4").innerHTML="Maximum Number(1,2,3,50,100,245):"+maxNum;
+document.getElementById("Math 5").innerHTML="Minimum Number(1,2,3,50,100,245):"+minNum;
+</script>
+</body>
+</html>
