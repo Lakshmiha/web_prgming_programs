@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+<h1>REGISTRATION FORM</h1>
+<form>
+<fieldset>
+<legend>Personalia:</legend>
+First Name:<input type="text" id="fname" name="fname"><br>
+Last name:<input type="text" id="lname" name="lname"><br>
+Age:<input type="number"><br>
+DOB:<input type="date" id="dob" name="dob"><br>
+Communication Address:<br>
+<textarea name="address" rows="10" cols="30">
+</textarea><br>
+Gender:<input type="radio" id="mal" name="mal" value="male">
+<label for="mal">Male</label>
+<input type="radio" id="fem" name="fem" value="female">
+<label for="fem">Female</label><br>
+Hobbies:<input type="checkbox" id="hob1" name="hob1" value="read">
+<label for="hob1">Reading</label>
+<input type="checkbox" id="hob2" name="hob2" value="draw">
+<label for="hob2">Drawing</label>
+<input type="checkbox" id="hob3" name="hob3" value="music">
+<label for="hob1">Listening to music</label>
+<input type="checkbox" id="hob4" name="hob4" value="play">
+<label for="hob1">Playing</label><br>
+</fieldset>
+<fieldset>
+<legend>Educational qualification:</legend>
+Qualification:<select id="qual" name="qual">
+<option value="Tenth">Tenth</option>
+<option value="Plus two">Plus two</option>
+<option value="Degree">Degree</option>
+<option value="PG">PG</option>
+</select><br>
+</fieldset>
+<fieldset>
+<legend>Contact details:</legend>
+email id:<input type="email" id="mailid" name="mailid">
+phone no: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</fieldset>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

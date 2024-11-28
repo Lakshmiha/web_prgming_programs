@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1>Background colour changing</h1>
+<button id="changeClr">Change colour</button>
+<script>
+const button=document.getElementById("changeClr");
+let colorIndex=0;
+const colors=["red","yellow","lavender","blue"];
+button.addEventListener('click',() => {document.body.style.backgroundColor=colors[colorIndex];colorIndex=(colorIndex+1)%colors.length;});
+</script>
+</body>
+</html>

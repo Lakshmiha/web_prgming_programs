@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Mouse Over effect</title>
+<style>
+#container
+{
+	width:500px;
+	margin:auto;
+	text-align:center;
+}
+
+#image
+{
+	width:200px;
+	height:150px;
+	border=1px solid blue;
+	display=block;
+}
+
+#hidden_content
+{
+	display:none;
+	position:absolute;
+	background-color:#f0f0f0;
+	padding:10px;
+	border:1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<div id="container" onmouseover="showContent()" onmouseout="hideContent()">
+<h2>Mouse Over effect</h2>
+<div id="hidden_content">
+<img src="C:\Users\Admin\Desktop\cherry.jpg" alt="image2" width="150 px" height="100 px">
+<p>New text displayed on mouse over!</p>
+</div>
+</div>
+<script>
+function showContent(){
+document.getElementById("hidden_content").style.display='block';
+}
+
+function hideContent(){
+document.getElementById("hidden_content").style.display='none';
+}
+</script>
+</body>
+</html>
+
+
