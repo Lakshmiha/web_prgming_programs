@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Book</title>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+    }
+    h1 {
+        text-align: center;
+        color: #4CAF50; /* Green color for the heading */
+    }
+    form {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50; /* Green color for the button */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049; /* Slightly darker green on hover */
+    }
+</style>
+
+</head>
+<body>
+    <h1>Search for a Book</h1>
+    <form action="search_book.php" method="GET">
+        <label for="title">Enter Book Title:</label>
+        <input type="text" id="title" name="title" required>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
